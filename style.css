@@ -1,0 +1,223 @@
+body{
+   font-family: Monospace;
+   font-size: 20px;
+   background: #eae0fa;
+   color: #2a0069;
+
+   
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+img{
+
+    width: 250px;
+    height: 250px;
+
+    
+
+    padding-top: 20px;
+    border-top-left-radius: 50% 50%; 
+    border-top-right-radius: 50% 50%; 
+    border-bottom-right-radius: 50% 50%; 
+    border-bottom-left-radius: 50% 50%; 
+
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.navbarLOL ul{
+    list-style: none;
+    background: #c29aff;
+    
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbarLOL li{
+        display: inline-block;
+        
+}
+.navbarLOL a{
+    text-decoration:  none;
+    color: aliceblue;
+    width: 100px;
+    display: block;
+    padding: 20px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.navbarLOL a:hover{
+    background: #a888d7;
+    color: #2a0069;
+    font-size: 17px;
+    padding: 18px 18px;
+}
+
+.mycontainer{
+    display: flex;
+    column-gap: 90px;
+    justify-content: space-around;
+
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.namelol{
+    display: flex;
+    width: 256px;
+    font-size: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+.image{
+
+    height: 650px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-right: #c29aff 3px solid;
+    padding-top: 50px;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+    
+    margin-top: 50px;
+}
+    
+div[id="content"]{
+    height: 250px;
+    width: 500px;
+    
+    margin-top: 130px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+    
+    flex: 6;
+}
+.elol{
+    display: flex;
+    margin-top: 75px;
+}
+
+.station{
+    flex: 3;
+}
+.movelol{
+    
+    flex: 1;
+}
+
+.clol{
+    font-size: 50px;
+}
+.proglol{
+    width: 1000px;
+}
+
+progress{
+    width: 70%;
+    
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    background-color: #eae0fa;
+    border-top: #c29aff 3px solid;
+    text-align: center;
+    margin-bottom: 7px;
+    padding-top: 7
+    px;
+    
+}
+
+@media(max-width: 940px) {
+
+    .mycontainer{
+        display: flex;
+        flex-direction: column;
+        min-width: 595px;
+    }
+    .image{
+        
+        border-bottom: rgb(121, 121, 121) 1px solid;
+        border-right: #a888d7 0px solid;
+        height: 500px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 0px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 25px;
+    }
+
+    img{
+
+        width: 175px;
+        height: 175px;
+    
+        padding-top: 20px;
+        border-top-left-radius: 50% 50%; 
+        border-top-right-radius: 50% 50%; 
+        border-bottom-right-radius: 50% 50%; 
+        border-bottom-left-radius: 50% 50%; 
+        
+    }
+    
+    div[id="content"]{
+        
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: auto;  
+        height: auto;
+        font-size: 15px;
+    }
+    .clol{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+    progress{
+        width: 95%;
+        
+    }
+}
+
+@media(max-width: 760px){
+    .navbarLOL a{
+        font-size: 13px;
+        width: 75px;
+        padding: 20px 10px;
+    }
+
+    .navbarLOL a:hover{
+        background: #a888d7;
+        color: #2a0069;
+        font-size: 15px;
+        padding: 18px 18px;
+    }
+}
